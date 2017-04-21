@@ -6,7 +6,7 @@ import 'ngstorage';
 import 'ng-material-floating-button/src/mfb-directive';
 import 'sortablejs/ng-sortable';
 
-import '../style/app.css';
+import './index.scss';
 
 import {
   LoginController

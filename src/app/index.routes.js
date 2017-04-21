@@ -16,7 +16,7 @@ export default function routerConfig($stateProvider, $urlRouterProvider, $locati
       url: '',
       template: require('./components/navbar/navbar.html'),
       controller: 'NavbarController',
-      controllerAs: 'NC',
+      controllerAs: 'NBC',
       abstract: true,
       data: {
         title: '',
@@ -30,7 +30,7 @@ export default function routerConfig($stateProvider, $urlRouterProvider, $locati
       url: '/dashboard',
       template: require('./dashboard/dashboard.html'),
       controller: 'DashboardController',
-      controllerAs: 'DC',
+      controllerAs: 'DBC',
       data: {
         title: 'Dashboard | Profile | Shree.com',
         navbar: {

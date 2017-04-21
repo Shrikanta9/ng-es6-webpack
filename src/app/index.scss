@@ -1,0 +1,214 @@
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ */
+$navbar-inverse-link-color: #5aadbb;
+// $fa-font-path: '../fonts';
+$bootstrap-sass-asset-helper: true;
+@import "../../node_modules/font-awesome/scss/font-awesome";
+@import "_variables";
+@import "_bsCustom";
+@import "_paper";
+@import "rdash";
+
+.alertify-logs {
+  z-index: 9999;
+}
+
+#overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  z-index: 1001;
+  text-align: center;
+
+  .fc-spinner {
+    top: 50%;
+    right: 50%;
+  }
+}
+
+hr {
+  border-top: 1px solid grey;
+}
+
+.app-modal-window .modal-dialog {
+  width: 1000px;
+}
+
+.filter-padding {
+  padding: 0;
+  text-align: center;
+}
+
+.text {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-green {
+  color: green;
+}
+
+.trash {
+  font-size: 18px;
+}
+
+.net {
+  display: inline-block;
+}
+
+.cart-filters {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.cart {
+  font-size: 18px;
+  margin-right: 20px;
+}
+.tag-sec {
+  min-height: 18px;
+  font-style: italic;
+  .premium-lbl {
+    color: #fffefe;
+    background-color: #ffc327;
+    padding: 2px 5px 2px 5px;
+  }
+  .bestseller-lbl {
+    color: #fffefe;
+    background-color: green;
+    padding: 2px;
+  }
+}
+.square {
+  height: 10px;
+  width: 20px;
+  margin: 0 2px 5px;
+}
+
+.filter {
+  height: 200px;
+  overflow: auto;
+}
+/*override classes*/
+.glyphicon {
+  display: inline-block;
+  font-family: FontAwesome !important;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon-chevron-left:before {
+  content: "\f053";
+}
+
+.glyphicon-chevron-right:before {
+  content: "\f054";
+}
+
+.glyphicon-chevron-up:before {
+  content: "\f139";
+}
+
+.glyphicon-chevron-down:before {
+  content: "\f13a";
+}
+
+.fc-line-fixed {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fc-product {
+  height: 40px;
+}
+
+.fc-color {
+  height: 15px;
+  display: flex;
+}
+
+.fc-pointer {
+  cursor: pointer;
+}
+
+img.product {
+  display: block;
+  margin: 0 auto;
+  height: 250px;
+}
+
+.glyphicon {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon-chevron-left:before {
+  content: '\f053';
+}
+
+.glyphicon-chevron-right:before {
+  content: '\f054';
+}
+
+.ledger-stat {
+  font-size: 14px;
+  color: #fff;
+  position: fixed;
+  padding: 5px;
+  bottom: 0;
+  width: 100%;
+  background-color: #f5821f;
+}
+
+.breakWord {
+  word-break: break-word;
+}
+
+.bestSellerNote{
+  font-size: 10px;
+  border: 1px solid black;
+}
+/*
+Print CSS for PDF prints
+*/
+@media screen {
+  #printSection {
+    display: none;
+  }
+}
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #printSection,
+  #printSection * {
+    visibility: visible;
+  }
+
+  #printSection {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}

@@ -1,0 +1,6 @@
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap";
+@import "../../node_modules/ng-material-floating-button/mfb/src/mfb";
+.mfb-component__button--main:hover,.mfb-component__button--child:hover {
+  color: white;
+  background-color: rgb(200, 0, 0);
+}
